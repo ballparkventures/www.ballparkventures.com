@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 
 theme = "hugo-lamp"
+
+# disable taxonomies
+disableKinds = ["taxonomy", "taxonomyTerm"]
