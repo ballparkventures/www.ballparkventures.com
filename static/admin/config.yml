@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: master
+
+collections:
+  - label: "Our Team"
+    name: "ourteam"
+    folder: "data/ourteam"
+    create: true
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Twitter", name: "twitter", widget: "string"}
+      - {label: "LinkedIn", name: "linkedin", widget: "string"}
+
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
