@@ -6,3 +6,6 @@ theme = "hugo-lamp"
 
 # disable taxonomies
 disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# enable robots.txt
+enableRobotsTXT = true

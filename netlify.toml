@@ -1,7 +1,15 @@
-# configure hugo version
-[context.production.environment]
-  HUGO_VERSION = "0.52"
-
 [build]
-publish = "public"
-command = "hugo --gc --minify"
+  # hugo static output directory - ignore by .gitnore
+  publish = "public"
+  # command to build hugo static output during ci
+  command = "hugo --gc --minify"
+
+  [build.environment]
+    # configure hugo version
+    HUGO_VERSION = "0.52"
+
+# the production branch is master
+[context.production]
+  [context.production.environment]
+    # uncomment to enable robots.txt when migrating live
+    #HUGO_ENV = "production"
