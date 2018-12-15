@@ -4,9 +4,12 @@ backend:
 
 collections:
   - label: "Team Members"
+    label_singular: "Team Member"
     name: "members"
     folder: "data/members"
     create: true
+    identifier_field: name
+    extension: yml
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
