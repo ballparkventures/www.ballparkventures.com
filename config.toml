@@ -1,11 +1,28 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# set language
+languageCode = "en"
 
+# set theme
 theme = "hugo-lamp"
 
 # disable taxonomies
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
+# disable hugo generator meta tag - TODO: check if this works once theme is disabled
+disableHugoGeneratorInject = true
+
 # enable robots.txt
 enableRobotsTXT = true
+
+# set site parameters
+baseURL = "https://www.ballparkventures.com/"
+title = "Ballpark Ventures - a small, boutique fund investing in early stage technology startups"
+
+# custom site parameters
+[params]
+  company = "Ballpark Ventures"
+  description = "Ballpark Ventures - a small, boutique fund investing in early stage technology startups. Given the wealth of our experience in sectors like mobile, retail and media, these tend to be our sweet spots"
+  #favicon = "/path/to/favicon.png"
+
+[outputs]
+  # disable rss feed
+  home = ["HTML"] # use AMP instead?

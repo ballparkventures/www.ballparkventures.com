@@ -1,12 +1,10 @@
 {{ define "main" }}
-  {{ partial "header.html" . }}
   <section class="main entry-list">
-    {{ range $.Site.Data.members }}
+    {{ range .Site.Data.members }}
       <img src="{{ .image }}">
       {{ .name }}
       <a href="{{ .twitter }}">Twitter</a>
       <br />
     {{ end }}
   </section>
-  {{ partial "footer.html" . }}
 {{ end }}
